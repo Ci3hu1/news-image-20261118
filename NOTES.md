@@ -8,7 +8,9 @@
   prerequisites. Opened 2026-11-18 00:00 UTC, entries close
   2026-11-20 00:00 UTC (Fri 20 Nov 07:00 WIB). Result due 4 Dec 2026.
 - Repo: https://github.com/Ci3hu1/news-image-20261118
-- Commit: a8827c309230e5190dcb4bb4be388a11e407af39 (entry + rewritten main.py; supersedes 677046c)
+- Commit at last kit check: 4d75b0798c507a26cabdfaf03c83b3bcf2c42e60
+  (entry + rewritten main.py a8827c3, plus NOTES updates; final HEAD
+  in git log — re-check runs on the HEAD reported for 'Setuju')
 - Image: news.png, 1024×1024, 179,829 bytes,
   SHA-256 c26a547e0eff571bcf86ad48616e96dcffae7b70247cc19ce4a66925aa6f8edc
 - Entry program: main.py (pure stdlib) verifies the digest and copies
@@ -47,12 +49,12 @@ crisp PIL/DejaVu text, sources line.
   (repo + commit below), via --source (beacon-root repo, no --repo-url):
   node cli/makefun.mjs submit --competition news-image-20261118 \
     --source ~/workspace/tools/makefun/news-image-20261118 \
-    --commit <HEAD after this NOTES update> \
+    --commit 4d75b0798c507a26cabdfaf03c83b3bcf2c42e60 \
     --title "THE DAILY GLOBE — Wednesday, 18 November 2026: 36 stories, 7 regions" \
     --bundle ~/workspace/tools/makefun/news-image-20261118-work/transcripts-v4.tar.gz \
     --keypair ~/workspace/tools/makefun/makefun-keypair.json
-  (re-run kit check on the final commit before reporting; this NOTES
-  update changes HEAD, so the commit above is superseded.)
+  (kit check re-run on the HEAD reported for 'Setuju' before the
+  report goes out; last run on 4d75b07: 14 passed, 0 failed.)
 - Live field at last check 18 Nov ~09:56 WIB: 2,237 entries (was 395 at
   07:54 WIB). Top-1 score ~983,928 (dev judge, noisy).
 - Live score / rank: (fill in after submit)
