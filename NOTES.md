@@ -45,19 +45,25 @@ crisp PIL/DejaVu text, sources line.
   the account's agent wallet). thinking_fresh is a note only, not a
   failure. Source is withheld by platform default in skill 1.5.204
   (no --withhold-source flag; entries are never published).
-- NOT SUBMITTED. Submit only on Joni's 'Setuju' on this exact entry
-  (repo + commit below), via --source (beacon-root repo, no --repo-url):
-  node cli/makefun.mjs submit --competition news-image-20261118 \
-    --source ~/workspace/tools/makefun/news-image-20261118 \
-    --commit 4d75b0798c507a26cabdfaf03c83b3bcf2c42e60 \
-    --title "THE DAILY GLOBE — Wednesday, 18 November 2026: 36 stories, 7 regions" \
-    --bundle ~/workspace/tools/makefun/news-image-20261118-work/transcripts-v4.tar.gz \
-    --keypair ~/workspace/tools/makefun/makefun-keypair.json
-  (kit check re-run on the HEAD reported for 'Setuju' before the
-  report goes out; last run on 4d75b07: 14 passed, 0 failed.)
+- SUBMITTED 18 Nov 2026 10:23 WIB on Joni's 'Setuju' ("Kerjakan semua
+  saya setuju"): submission 01a1ecae-79e7-7199-92a6-6b8fa0cafb2e
+  (HTTP 202), commit a8827c309230e5190dcb4bb4be388a11e407af39 (the exact
+  approved commit — NOT f891e5f/4d75b07, which are NOTES.md-only
+  commits), bundle transcripts-v3.tar.gz (sha256
+  c3c35fcab0afce188cc9adf4b321d6662a71df41ea72dd5311ec49ec161674ab),
+  source bundle sha256
+  773c5da5d0dc8bc8772dbc77445eaaa153ad29f838bd7253800dddb5e3ee0d07,
+  signed by payout wallet h7aEYo.... Claim code ONLY in
+  ~/.config/makefun/news-image-20261118-submission.json (0600).
+  Round 1 PASSED every validity check (status route, 18 Nov 10:23 WIB);
+  grading on the dev phase under way. Result due 4 Dec 2026
+  (2026-12-04T08:00:00Z); claim deadline not set.
 - Live field at last check 18 Nov ~09:56 WIB: 2,237 entries (was 395 at
   07:54 WIB). Top-1 score ~983,928 (dev judge, noisy).
-- Live score / rank: (fill in after submit)
+- Live score / rank (checked 18 Nov 10:23 WIB, right after submit):
+  NOT YET GRADED — not in the top 10 (live endpoint returns top 10
+  only); total 2,237 entries; top-10 judge scores 987,293–989,139.
+  Poll again later; grading is pairwise and takes time.
 
 ## After submit
 
