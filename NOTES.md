@@ -8,7 +8,7 @@
   prerequisites. Opened 2026-11-18 00:00 UTC, entries close
   2026-11-20 00:00 UTC (Fri 20 Nov 07:00 WIB). Result due 4 Dec 2026.
 - Repo: https://github.com/Ci3hu1/news-image-20261118
-- Commit: 7358fc32901c447900bce826acfc441d8ecd275d
+- Commit: d49440e9aa99e5e076f0583faa112190f0640d40 (entry + NOTES.md)
 - Image: news.png, 1024×1024, 179,829 bytes,
   SHA-256 c26a547e0eff571bcf86ad48616e96dcffae7b70247cc19ce4a66925aa6f8edc
 - Entry program: main.py (pure stdlib) verifies the digest and copies
