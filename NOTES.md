@@ -8,12 +8,13 @@
   prerequisites. Opened 2026-11-18 00:00 UTC, entries close
   2026-11-20 00:00 UTC (Fri 20 Nov 07:00 WIB). Result due 4 Dec 2026.
 - Repo: https://github.com/Ci3hu1/news-image-20261118
-- Commit: d49440e9aa99e5e076f0583faa112190f0640d40 (entry + NOTES.md)
+- Commit: a8827c309230e5190dcb4bb4be388a11e407af39 (entry + rewritten main.py; supersedes 677046c)
 - Image: news.png, 1024×1024, 179,829 bytes,
   SHA-256 c26a547e0eff571bcf86ad48616e96dcffae7b70247cc19ce4a66925aa6f8edc
 - Entry program: main.py (pure stdlib) verifies the digest and copies
   news.png to /output/entry.png. Tests: tests/test_entry.py — all pass
-  (determinism, digest, size ≤1 MiB, dimensions 1024×1024).
+  (run 18 Nov ~10:02 WIB: "all entry tests passed"; main.py output
+  byte-identical to news.png, same SHA-256).
 - Kit: news-image-20261118-kit (kit.json bundle
   d448959a49da725ffc84e5cb6c40f07aeadbfdc756fb846645400d164d165fea),
   init done (LICENSE MIT, freshness anchor round 34053608).
@@ -31,13 +32,29 @@ crisp PIL/DejaVu text, sources line.
 
 ## Status
 
-- Bundle + kit check PENDING: usage rows for this build session were
-  not in muse.db yet at bundle time (0 rows attached) — the kit's own
-  guidance is to end the turn, re-run the SELECT next turn and bundle
-  again. Exact commands in ../news-image-20261118-work/NEXT-STEPS.md.
+- Bundle + kit check DONE 18 Nov ~10:02 WIB (run makefun-cek-bounty-baru-rutin):
+  bundle transcripts-v4.tar.gz (sha256
+  5f6e0900da63c93b5cde68d57265ee259af1f1015843ac5dac27cb0cec6b1a04),
+  2 sessions (build 5fc22b3d 00:54–01:22 UTC + fix ef060e20 02:12–02:15 UTC),
+  2 usage rows attached (model ipnext/avocado-5.17-v2, priced per
+  pricing row 107). Kit check on commit a8827c3: **14 passed, 0 failed,
+  6 skipped, 3 checked at submission** (repo_owner, source_bundle,
+  duplicate_snapshot — evaluated at submit; anchor wallet h7aEYo... is
+  the account's agent wallet). thinking_fresh is a note only, not a
+  failure. Source is withheld by platform default in skill 1.5.204
+  (no --withhold-source flag; entries are never published).
 - NOT SUBMITTED. Submit only on Joni's 'Setuju' on this exact entry
-  (repo + commit above). Withhold source at submit
-  (source_withheld: true) per playbook.
+  (repo + commit below), via --source (beacon-root repo, no --repo-url):
+  node cli/makefun.mjs submit --competition news-image-20261118 \
+    --source ~/workspace/tools/makefun/news-image-20261118 \
+    --commit <HEAD after this NOTES update> \
+    --title "THE DAILY GLOBE — Wednesday, 18 November 2026: 36 stories, 7 regions" \
+    --bundle ~/workspace/tools/makefun/news-image-20261118-work/transcripts-v4.tar.gz \
+    --keypair ~/workspace/tools/makefun/makefun-keypair.json
+  (re-run kit check on the final commit before reporting; this NOTES
+  update changes HEAD, so the commit above is superseded.)
+- Live field at last check 18 Nov ~09:56 WIB: 2,237 entries (was 395 at
+  07:54 WIB). Top-1 score ~983,928 (dev judge, noisy).
 - Live score / rank: (fill in after submit)
 
 ## After submit
